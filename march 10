@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt, math
+
+n = 200
+u = []
+p = []
+
+def gt(x):
+    y = math.sin(math.exp(x))
+    return y
+
+for h in range(n):
+    u.append(gt(h))
+for j in range(n):
+    p.append(j)
+
+plt.plot(p, u)
+plt.show()
